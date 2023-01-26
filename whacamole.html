@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title h1{
+            width: fit-content;
+            margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .content{
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+            margin: auto;
+            justify-content: space-around;
+        }
+        .content div{
+            width: 200px;
+            height: 200px;
+            margin: 10px 0 10px 0;
+            border: 0.1px solid black;
+        }
+        .test{
+            background-color: aqua;
+        }
+        #result h1{
+            width: fit-content;
+            margin: auto;
+        }
+        .timer h1{
+            width: fit-content;
+            margin: auto;
+        }
+        button{
+            display: block;
+            margin: auto;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Whac - a - Mole</h1>
+        <h2 style="text-align:center">Whac a mole is a game that relies on the speed of your hands to hit anything that pops up. This game lasts 2 minutes where the user is asked to quickly press something that appears from the hole as much as possible. every time you can hit something that appears will get an additional 1 point</h2>
+    </div>
+    <div class="gamecontainer">
+        <section class="content">
+        </section>
+    </div>
+    <button>Start</button>
+    <div id="result">
+        <h1>Result :</h1>
+        <h1>Score : 0</h1>
+    </div>
+    <div class="timer">
+        <h1><span id="minutes">00</span>:<span id="second">00</span></h1>
+    </div>
+    <script src="whacamole.js"></script>
+</body>
+</html>
